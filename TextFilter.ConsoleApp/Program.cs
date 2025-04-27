@@ -14,7 +14,7 @@ public class TextFilterApp
             filePath = "TestFile.txt";
         }
         
-        IEnumerable<string> words = TextFileReader.ReadWordsFromFile(filePath);
+        IEnumerable<string> words = new TextFileReader().ReadWordsFromFile(filePath);
         
         if (words.Any())
         {
